@@ -1,5 +1,5 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { General } from './General';
+import { ComponentMeta, ComponentStory } from '@storybook/react'
+import { General } from './General'
 
 export default {
   title: 'Post/General',
@@ -16,11 +16,9 @@ export default {
       control: { type: 'radio' },
     },
   },
-} as ComponentMeta<typeof General>;
+} as ComponentMeta<typeof General>
 
 // arg in story book
-const Template: ComponentStory<typeof General> = (args) => (
-  <General {...args} />
-);
+const Template: ComponentStory<typeof General> = (args) => <General {...args} />
 
-export const GeneralA = Template.bind({});
+export const GeneralA = Template.bind({})

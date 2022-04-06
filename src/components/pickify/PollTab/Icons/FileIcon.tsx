@@ -13,5 +13,5 @@ export const FileIcon = () => {
         fill="#5B6366"
       />
     </svg>
-  );
-};
+  )
+}

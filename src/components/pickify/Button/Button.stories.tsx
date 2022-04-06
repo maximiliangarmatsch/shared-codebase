@@ -1,6 +1,6 @@
 /* eslint-disable react/function-component-definition */
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Button } from './Button';
+import { ComponentMeta, ComponentStory } from '@storybook/react'
+import { Button } from './Button'
 
 export default {
   title: 'Form/Button',
@@ -27,19 +27,19 @@ export default {
     disabled: { control: 'boolean' },
     onClick: { action: 'clicked' },
   },
-} as ComponentMeta<typeof Button>;
+} as ComponentMeta<typeof Button>
 
 // arg in story book
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />
 
-export const Primary = Template.bind({});
+export const Primary = Template.bind({})
 
-export const Secondary = Template.bind({});
+export const Secondary = Template.bind({})
 
-export const Text = Template.bind({});
+export const Text = Template.bind({})
 
 Primary.args = {
   type: 'primary',
   text: 'Primary Button',
   size: 'lg',
-};
+}

@@ -1,6 +1,5 @@
-import { Checkbox } from './Checkbox';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-export {};
+import { Checkbox } from './Checkbox'
+import { ComponentMeta, ComponentStory } from '@storybook/react'
 
 export default {
   title: 'Form/Checbox',
@@ -15,10 +14,10 @@ export default {
     },
     disabled: { control: 'boolean' },
   },
-} as ComponentMeta<typeof Checkbox>;
+} as ComponentMeta<typeof Checkbox>
 
 const Template: ComponentStory<typeof Checkbox> = (args) => (
   <Checkbox {...args} />
-);
+)
 
-export const ChecboxA = Template.bind({});
+export const ChecboxA = Template.bind({})

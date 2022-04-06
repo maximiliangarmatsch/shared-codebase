@@ -10,5 +10,5 @@ export const GeneralTextInput = ({ onChange }: any) => {
         type="text"
       />
     </div>
-  );
-};
+  )
+}

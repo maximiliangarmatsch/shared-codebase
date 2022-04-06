@@ -1,25 +1,25 @@
-import './PollTab.css';
-import { ImageIcon } from './Icons/ImageIcon';
-import { FileIcon } from './Icons/FileIcon';
-import { PollIcon } from './Icons/PollIcon';
+import './PollTab.css'
+import { ImageIcon } from './Icons/ImageIcon'
+import { FileIcon } from './Icons/FileIcon'
+import { PollIcon } from './Icons/PollIcon'
 
 interface PollTabProps {
-  type?: string;
-  text: string;
+  type?: string
+  text: string
 }
 
 export const PollTab = ({ type, text }: PollTabProps) => {
-  let source;
+  let source
   if (!text) {
-    text = 'Default Poll';
+    text = 'Default Poll'
   }
 
   if (type === 'img') {
-    source = <ImageIcon />;
+    source = <ImageIcon />
   } else if (type === 'poll') {
-    source = <PollIcon />;
+    source = <PollIcon />
   } else {
-    source = <FileIcon />;
+    source = <FileIcon />
   }
   return (
     <button
@@ -43,5 +43,5 @@ export const PollTab = ({ type, text }: PollTabProps) => {
         <span className="ml-2 text-sm font-medium">{text}</span>
       </label>
     </button>
-  );
-};
+  )
+}

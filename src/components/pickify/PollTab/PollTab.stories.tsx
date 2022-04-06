@@ -1,5 +1,5 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { PollTab } from './PollTab';
+import { ComponentMeta, ComponentStory } from '@storybook/react'
+import { PollTab } from './PollTab'
 
 export default {
   title: 'Form/PollTab',
@@ -10,11 +10,9 @@ export default {
     type: { control: 'radio', options: ['img', 'poll', 'file'] },
     text: { control: 'text' },
   },
-} as ComponentMeta<typeof PollTab>;
+} as ComponentMeta<typeof PollTab>
 
 // arg in story book
-const Template: ComponentStory<typeof PollTab> = (args) => (
-  <PollTab {...args} />
-);
+const Template: ComponentStory<typeof PollTab> = (args) => <PollTab {...args} />
 
-export const PollTabA = Template.bind({});
+export const PollTabA = Template.bind({})

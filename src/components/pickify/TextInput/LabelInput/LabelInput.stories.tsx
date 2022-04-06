@@ -1,5 +1,5 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { LabelInput } from './LabelInput';
+import { ComponentMeta, ComponentStory } from '@storybook/react'
+import { LabelInput } from './LabelInput'
 
 export default {
   title: 'Form/LabelInput',
@@ -10,11 +10,11 @@ export default {
     status: { control: 'radio', options: ['error', 'success', 'other'] },
     placeholder: { control: 'text' },
   },
-} as ComponentMeta<typeof LabelInput>;
+} as ComponentMeta<typeof LabelInput>
 
 // arg in story book
 const Template: ComponentStory<typeof LabelInput> = (args) => (
   <LabelInput {...args} />
-);
+)
 
-export const LabelInputA = Template.bind({});
+export const LabelInputA = Template.bind({})

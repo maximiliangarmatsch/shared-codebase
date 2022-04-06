@@ -1,4 +1,4 @@
-import { Toggle } from '../../Atoms/Toggle/Toggle';
+import { Toggle } from '../Toggle/Toggle'
 
 export const PostOptions = (): JSX.Element => {
   return (
@@ -27,5 +27,5 @@ export const PostOptions = (): JSX.Element => {
         </select>
       </div>
     </div>
-  );
-};
+  )
+}

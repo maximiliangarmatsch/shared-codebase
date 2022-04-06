@@ -1,26 +1,26 @@
-import { CorrectIcon } from '../../Icons/CorrectIcon';
-import { WrongIcon } from '../../Icons/WrongIcon';
-import { ArrowDown } from '../../Icons/ArrowDown';
+import { CorrectIcon } from '../../Icons/CorrectIcon'
+import { WrongIcon } from '../../Icons/WrongIcon'
+import { ArrowDown } from '../../Icons/ArrowDown'
 
 interface LabelInputProps {
-  placeholder: string;
-  status: string;
+  placeholder: string
+  status: string
 }
 
 export const LabelInput = ({
   status,
   placeholder,
 }: LabelInputProps): JSX.Element => {
-  let statusStyle, iconDisplay;
+  let statusStyle, iconDisplay
   if (status === 'error') {
-    statusStyle = 'border-error border';
-    iconDisplay = <WrongIcon />;
+    statusStyle = 'border-error border'
+    iconDisplay = <WrongIcon />
   } else if (status === 'success') {
-    statusStyle = 'border-success border';
-    iconDisplay = <CorrectIcon />;
+    statusStyle = 'border-success border'
+    iconDisplay = <CorrectIcon />
   } else {
-    statusStyle = 'border-dark border border-opacity-25';
-    iconDisplay = '';
+    statusStyle = 'border-dark border border-opacity-25'
+    iconDisplay = ''
   }
   return (
     <>
@@ -40,5 +40,5 @@ export const LabelInput = ({
         </div>
       </div>
     </>
-  );
-};
+  )
+}

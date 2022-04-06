@@ -1,4 +1,4 @@
-import { PostingBar } from './PostingBar';
+import { PostingBar } from './PostingBar'
 
 export default {
   title: 'Post/PostingBar',
@@ -10,7 +10,7 @@ export default {
       },
     },
   },
-};
+}
 
-const Template = ({ disabled }: any) => <PostingBar disabled={disabled} />;
-export const _PostingBar = Template.bind({});
+const Template = ({ disabled }: any) => <PostingBar disabled={disabled} />
+export const _PostingBar = Template.bind({})

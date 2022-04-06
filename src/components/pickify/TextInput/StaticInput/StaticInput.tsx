@@ -1,14 +1,14 @@
-import { CorrectIcon } from '../../Icons/CorrectIcon';
-import { WrongIcon } from '../../Icons/WrongIcon';
-import { HomeIcon } from '../../Icons/HomeIcons';
+import { CorrectIcon } from '../../Icons/CorrectIcon'
+import { WrongIcon } from '../../Icons/WrongIcon'
+import { HomeIcon } from '../../Icons/HomeIcons'
 
 interface StaticInputProps {
-  status: string;
-  disabled: boolean;
-  icon: string;
-  prefix: string;
-  direction: string;
-  placeholder: string;
+  status: string
+  disabled: boolean
+  icon: string
+  prefix: string
+  direction: string
+  placeholder: string
 }
 
 export const StaticInput = ({
@@ -19,21 +19,21 @@ export const StaticInput = ({
   direction,
   placeholder,
 }: StaticInputProps) => {
-  let statusStyle, iconDisplay;
+  let statusStyle, iconDisplay
   if (status === 'error') {
-    statusStyle = 'border-error border';
-    iconDisplay = <WrongIcon />;
+    statusStyle = 'border-error border'
+    iconDisplay = <WrongIcon />
   }
   if (status === 'normal') {
-    statusStyle = 'border-dark border border-opacity-25';
-    iconDisplay = '';
+    statusStyle = 'border-dark border border-opacity-25'
+    iconDisplay = ''
   } else if (status === 'success') {
-    statusStyle = 'border-success border';
-    iconDisplay = <CorrectIcon />;
+    statusStyle = 'border-success border'
+    iconDisplay = <CorrectIcon />
   }
-  let opacity = disabled ? 'opacity-50' : '';
+  let opacity = disabled ? 'opacity-50' : ''
   //const homeDisplay = <HomeIcon className="pl-1 pr-1 pt-2.5 inline-block" />;
-  const homeDisplay = icon === 'home' ? <HomeIcon /> : '';
+  const homeDisplay = icon === 'home' ? <HomeIcon /> : ''
   if (prefix !== 'none') {
     return (
       <>
@@ -59,7 +59,7 @@ export const StaticInput = ({
           <div className="pt-2.5 pr-1 mr-3">{iconDisplay}</div>
         </div>
       </>
-    );
+    )
   } else {
     return (
       <>
@@ -82,6 +82,6 @@ export const StaticInput = ({
           <div className="pt-2.5 pr-1 mr-3">{iconDisplay}</div>
         </div>
       </>
-    );
+    )
   }
-};
+}

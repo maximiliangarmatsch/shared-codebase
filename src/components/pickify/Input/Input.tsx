@@ -1,21 +1,21 @@
-import React from "react";
-import "./Input.css";
+import './Input.css'
 
 interface InputProps {
-  size: string;
-  placeHolder: string;
+  size: string
+  placeHolder: string
 }
 
-function Input({ size = "medium", placeHolder, ...rest }: InputProps) {
+function Input({ size = 'medium', placeHolder, ...rest }: InputProps) {
   return (
     <>
       <input
         type="text"
         className={`input ${size} `}
         placeholder={placeHolder}
+        {...rest}
       />
     </>
-  );
+  )
 }
 
-export default Input;
+export default Input

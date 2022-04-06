@@ -1,13 +1,13 @@
-import './Button.css';
+import './Button.css'
 
 export interface ButtonProps {
-  type: string;
-  size?: string;
-  disabled?: boolean;
-  text?: string;
-  hasIcon?: boolean;
-  iconDirection?: string;
-  onClick?: () => void;
+  type: string
+  size?: string
+  disabled?: boolean
+  text?: string
+  hasIcon?: boolean
+  iconDirection?: string
+  onClick?: () => void
 }
 
 export const Button = ({
@@ -19,42 +19,42 @@ export const Button = ({
   iconDirection,
   onClick,
 }: ButtonProps): JSX.Element => {
-  let opacity;
-  let _size;
-  let _type;
-  let iconOrder;
-  let marginSetting;
-  let iconColor;
-  iconOrder = `flex-row`;
+  let opacity
+  let _size
+  let _type
+  let iconOrder
+  let marginSetting
+  let iconColor
+  iconOrder = `flex-row`
 
   if (!text) {
-    text = 'Click';
+    text = 'Click'
   }
 
   // size = ['lg', 'md', 'sm]:
-  if (size === 'lg') _size = 'px-xl py-3.5 text-md font-bold ';
-  else if (size === 'md') _size = 'px-l py-xs text-base font-medium';
+  if (size === 'lg') _size = 'px-xl py-3.5 text-md font-bold '
+  else if (size === 'md') _size = 'px-l py-xs text-base font-medium'
   else {
-    _size = 'px-m py-1.5 font-medium text-sm';
+    _size = 'px-m py-1.5 font-medium text-sm'
   }
 
   // type = ['primary', 'secondary', 'text']
   if (type === 'secondary') {
-    _type = 'secondary bg-white text-primary border border-primary';
+    _type = 'secondary bg-white text-primary border border-primary'
   } else if (type === 'text') {
-    _type = 'text text-accent focus-within';
+    _type = 'text text-accent focus-within'
   } else {
-    _type = 'primary bg-primary text-white border-2 border-primary';
+    _type = 'primary bg-primary text-white border-2 border-primary'
   }
   // dsiabled?
   if (disabled) {
-    opacity = 'opacity-25 cursor-not-allowed';
+    opacity = 'opacity-25 cursor-not-allowed'
   }
   if (hasIcon) {
-    iconOrder = iconDirection === 'left' ? 'flex-row' : 'flex-row-reverse';
-    marginSetting = iconDirection === 'left' ? 'ml' : 'mr';
+    iconOrder = iconDirection === 'left' ? 'flex-row' : 'flex-row-reverse'
+    marginSetting = iconDirection === 'left' ? 'ml' : 'mr'
     iconColor =
-      type === 'text' ? '#00A8E8' : type === 'secondary' ? '#7048E8' : 'white';
+      type === 'text' ? '#00A8E8' : type === 'secondary' ? '#7048E8' : 'white'
   }
 
   return hasIcon ? (
@@ -88,5 +88,5 @@ export const Button = ({
     >
       <span className="inline-block font-medium	">{text}</span>
     </button>
-  );
-};
+  )
+}

@@ -1,5 +1,5 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Toggle } from './Toggle';
+import { ComponentMeta, ComponentStory } from '@storybook/react'
+import { Toggle } from './Toggle'
 
 export default {
   title: 'Form/Toggle',
@@ -11,9 +11,9 @@ export default {
     disabled: { control: 'boolean' },
     onClick: { action: 'clicked' },
   },
-} as ComponentMeta<typeof Toggle>;
+} as ComponentMeta<typeof Toggle>
 
 // arg in story book
-const Template: ComponentStory<typeof Toggle> = (args) => <Toggle {...args} />;
+const Template: ComponentStory<typeof Toggle> = (args) => <Toggle {...args} />
 
-export const ToggleA = Template.bind({});
+export const ToggleA = Template.bind({})

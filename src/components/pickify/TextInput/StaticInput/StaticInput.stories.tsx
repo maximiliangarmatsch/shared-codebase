@@ -1,5 +1,5 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { StaticInput } from './StaticInput';
+import { ComponentMeta, ComponentStory } from '@storybook/react'
+import { StaticInput } from './StaticInput'
 
 export default {
   title: 'Atoms/StaticInput',
@@ -9,18 +9,18 @@ export default {
     icon: { control: 'radio', options: ['none', 'home'] },
     direction: { control: 'radio', options: ['flex-row', 'flex-row-reverse'] },
   },
-} as ComponentMeta<typeof StaticInput>;
+} as ComponentMeta<typeof StaticInput>
 
 // arg in story book
 const Template: ComponentStory<typeof StaticInput> = (args) => (
   <StaticInput {...args} />
-);
+)
 
-export const IconInput = Template.bind({});
+export const IconInput = Template.bind({})
 IconInput.args = {
   status: 'error',
   prefix: '+20',
   icon: 'home',
   disabled: false,
   // direction: 'flex-row'
-};
+}

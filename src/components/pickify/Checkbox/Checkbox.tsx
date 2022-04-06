@@ -1,38 +1,38 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
 interface CheckboxProps {
-  size: string;
-  disabled: boolean;
+  size: string
+  disabled: boolean
 }
 
 export const Checkbox = ({ size, disabled }: CheckboxProps): JSX.Element => {
-  const [hideIcon, setHideIcon] = useState(true);
+  const [hideIcon, setHideIcon] = useState(true)
 
   const [displayIcon, setDisplayIcon] = useState({
     icon: 'hidden',
     bg: 'bg-white',
-  });
-  let opacitySetting = disabled ? '25' : '';
+  })
+  const opacitySetting = disabled ? '25' : ''
   const handleClick = () => {
-    console.log(hideIcon);
-    setHideIcon(!hideIcon);
+    console.log(hideIcon)
+    setHideIcon(!hideIcon)
     if (hideIcon) {
       setDisplayIcon({
         icon: '',
         bg: 'bg-primary',
-      });
+      })
     } else {
       setDisplayIcon({
         icon: 'hidden',
         bg: 'bg-white',
-      });
+      })
     }
-  };
-  let sizeSetting = '1';
+  }
+  let sizeSetting = '1'
   if (size === 'sm') {
-    sizeSetting = '0.666';
+    sizeSetting = '0.666'
   } else {
-    sizeSetting = '1';
+    sizeSetting = '1'
   }
 
   return (
@@ -66,5 +66,5 @@ export const Checkbox = ({ size, disabled }: CheckboxProps): JSX.Element => {
         data-testid="checkbox-test"
       />
     </div>
-  );
-};
+  )
+}

@@ -1,8 +1,8 @@
-import { PostOptions } from '../PostOptions/PostOptions';
-import { Button } from '../../Atoms/Button/Button';
+import { PostOptions } from '../PostOptions/PostOptions'
+import { Button } from '../Button/Button'
 
 interface postingBarProps {
-  disabled: boolean;
+  disabled: boolean
 }
 
 export const PostingBar = ({ disabled }: postingBarProps) => {
@@ -15,5 +15,5 @@ export const PostingBar = ({ disabled }: postingBarProps) => {
         <Button disabled={disabled} type="primary" />
       </div>
     </div>
-  );
-};
+  )
+}
