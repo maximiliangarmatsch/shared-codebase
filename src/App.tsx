@@ -7,7 +7,7 @@ function App() {
   return (
     <BaseLayout>
       <>
-        <div>
+        <div className=" border-4 border-primary">
           <span>{`Let's get started.....`}</span>
           <Button label="Get Started" backgroundColor="green"></Button>
         </div>
