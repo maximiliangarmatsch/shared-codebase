@@ -31,7 +31,7 @@ export const StaticInput = ({
     statusStyle = 'border-success border'
     iconDisplay = <CorrectIcon />
   }
-  let opacity = disabled ? 'opacity-50' : ''
+  const opacity = disabled ? 'opacity-50' : ''
   //const homeDisplay = <HomeIcon className="pl-1 pr-1 pt-2.5 inline-block" />;
   const homeDisplay = icon === 'home' ? <HomeIcon /> : ''
   if (prefix !== 'none') {

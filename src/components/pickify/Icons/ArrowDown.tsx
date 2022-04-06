@@ -12,5 +12,5 @@ export const ArrowDown = () => {
         clipRule="evenodd"
       ></path>
     </svg>
-  );
-};
+  )
+}

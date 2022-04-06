@@ -11,5 +11,5 @@ export const HomeIcon = () => {
         fill="#5B6366"
       />
     </svg>
-  );
-};
+  )
+}

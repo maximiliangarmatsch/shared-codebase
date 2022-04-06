@@ -12,5 +12,5 @@ export const CorrectIcon = () => {
         clipRule="evenodd"
       ></path>
     </svg>
-  );
-};
+  )
+}

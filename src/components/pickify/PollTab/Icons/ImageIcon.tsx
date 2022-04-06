@@ -13,5 +13,5 @@ export const ImageIcon = () => {
         fill="#5B6366"
       />
     </svg>
-  );
-};
+  )
+}

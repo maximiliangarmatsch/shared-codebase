@@ -11,5 +11,5 @@ export const PollIcon = () => {
         fill="#5B6366"
       />
     </svg>
-  );
-};
+  )
+}
